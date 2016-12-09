@@ -1,11 +1,10 @@
-package controllers.raven;
+package controllers.submodule1;
 
 import com.avaje.ebean.Ebean;
 
-import models.raven.ContactForm;
+import models.submodule1.ContactForm;
 import play.data.Form;
 import play.mvc.Result;
-import services.SendGridService;
 
 public class ContactFormController extends BaseController {
 

@@ -1,10 +1,10 @@
-package models.raven;
+package models.submodule1;
 
 import javax.persistence.Entity;
 
 @Entity
 public class ContactForm extends BaseModel {
-	
+
 	private String name;
 	private String email;
 	private String message;
@@ -33,10 +33,10 @@ public class ContactForm extends BaseModel {
 	public void setApp(String app) {
 		this.app = app;
 	}
-	
-	
-	
-	
-	
+
+
+
+
+
 
 }

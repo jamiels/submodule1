@@ -15,10 +15,8 @@ libraryDependencies ++= Seq(
 
 libraryDependencies += evolutions
 libraryDependencies += filters
-TwirlKeys.constructorAnnotations += "@javax.inject.Inject()"
 
-
-// Load dependencies
+// Load dependencies - not relevant
 // https://mvnrepository.com/artifact/org.yaml/snakeyaml - Play no longer supports Yaml natively
 libraryDependencies += "org.yaml" % "snakeyaml" % "1.17"
 
@@ -52,4 +50,5 @@ routesGenerator := InjectedRoutesGenerator
 JsEngineKeys.engineType := JsEngineKeys.EngineType.Node
 //fork in run := true
 
+// This is needed if you have subprojects
 playEbeanModels in Compile := Seq("models.submodule1.*")
