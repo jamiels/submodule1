@@ -4,3 +4,6 @@
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public/lib/submodule1", file: Asset)
+
+GET     /showContactForm            controllers.submodule1.ContactFormController.show()
+POST    /postContactForm            controllers.submodule1.ContactFormController.submitContactForm()
